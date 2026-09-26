@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LabEx1</string>
+    <string name="button">Click Me!</string>
+    <string name="init_value"> Hello COMP3074</string>
+    <string name="click_value"> It is Alive</string>
+    <array name="values">
+        <item>Hello COMP3074</item>
+        <item>It is Alive</item>
+        <item>Some other message</item>
+    </array>
+</resources>
