@@ -3,9 +3,11 @@ import React, { useEffect, useState } from 'react';
 import {
   ActivityIndicator,
   FlatList,
+  Platform,
   Pressable,
   SafeAreaView,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   View,
@@ -226,6 +228,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F4F6F8',
     padding: 16,
+    // keep content below the Android status bar so the Back button can be tapped
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight + 16 : 16,
   },
 
   centered: {
